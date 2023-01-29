@@ -17,32 +17,53 @@ export const Footer = () => {
 
     return (
         <footer className={fixPosition ? "pb-1 fixed-bottom bg-secondary" : "pb-1 bg-secondary"}>
-            <p className="m-0 p-0 text-center">Created By: <strong>BAAL</strong></p>
-            <div className="row justify-content-center">
+            <div className="row justify-content-around">
+                {/* Paul Lacrampe */}
                 <div className="col-auto">
-                    <a href="https://wa.me/56979577547" rel="noopener noreferrer" className="btn " target="_blank">
-                        <img width="25px" className="mt-2 me-3" src="https://cdn-icons-png.flaticon.com/512/174/174879.png"
-                            alt="logo-whatsapp" />
-                    </a>
+                    <p className="mb-0 text-center">Ventas</p>
+                    <ul>
+                        <li>
+
+                            Paul Lacrampe - 950944263
+                            <a href="https://wa.me/56950944263" rel="noopener noreferrer" className="btn" target="_blank">
+                                <img width="25px" className="mb-1" src="https://cdn-icons-png.flaticon.com/512/2504/2504957.png"
+                                    alt="logo-whatsapp" />
+                            </a>
+                            <p>placrampe@newequip.cl</p>
+                        </li>
+                        <li>
+                            Veronica Galaz - 949372885
+                            <a href="https://wa.me/56949372885" rel="noopener noreferrer" className="btn " target="_blank">
+                                <img width="25px" className="mb-1" src="https://cdn-icons-png.flaticon.com/512/2504/2504957.png"
+                                    alt="logo-whatsapp" />
+                            </a>
+                            <p>vgalaz@newequip.cl</p>
+                        </li>
+                    </ul>
+                </div>
+                {/* Veronica Galaz */}
+                <div className="col-auto">
+                    <p >Horario de Atención</p>
+                    <p className="mb-0">Lunes a viernes</p>
+                    <p>8:30am - 18:00pm</p>
                 </div>
                 <div className="col-auto">
-                    <a href="https://www.linkedin.com/in/alburquenque-letelier/" rel="noopener noreferrer" className="btn " target="_blank">
-                        <img width="25px" className="mt-2 me-3"
-                            src="https://cdn-icons-png.flaticon.com/512/3938/3938061.png" alt="Linkedin" />
+                    <p className="mb-0">Siguenos</p>
+                    <a href="https://www.facebook.com/Newequip" rel="noopener noreferrer" className="btn " target="_blank">
+                        <img width="25px"
+                            src="https://cdn-icons-png.flaticon.com/512/2504/2504903.png" alt="facebook" />
                     </a>
-                </div>
-                <div className="col-auto">
-                    <a href="https://github.com/alburquenqueletelier" rel="noopener noreferrer" className="btn " target="_blank">
-                        <img width="25px" className="mt-2 me-3" src="https://cdn-icons-png.flaticon.com/512/536/536452.png"
-                            alt="Github" />
-                    </a>
-                </div>
-                <div className="col-auto">
-                    <a href="https://instagram.com/baal_sw/?hl=en" rel="noopener noreferrer" className="btn " target="_blank">
-                        <img width="25px" className="mt-2 ms-2"
-                            src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg"
+                    <a href="https://www.instagram.com/newequipchile/" rel="noopener noreferrer" className="btn " target="_blank">
+                        <img width="25px"
+                            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
                             alt="https://www.instagram.com/baal_sw/?hl=en" />
                     </a>
+                </div>
+                <div className="col-auto">
+                    <p>Información de Contacto</p>
+                    <p className="mb-0">Avenida Ventisquero 1111 - Bodega 28, Renca</p>
+                    <p className="mb-0">Consultas: 945374044 <img width="25px" src="https://cdn-icons-png.flaticon.com/512/2504/2504957.png" alt="whatsapp"/></p>
+
                 </div>
             </div>
         </footer >

@@ -1,36 +1,42 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
+import { Canvasmenu } from "../components/offcanvas";
+import { Buttoncanvas } from "../components/buttoncanvas";
 
 export const Home = () => {
     // Import store and actions from Context
     const { store, actions } = useContext(Context);
 
     return (
-        <div className="container text-center">
-            <div className="d-flex flex-column aligns-items-center my-5">
-                <h3>This is my Django - React Boilerplate</h3>
-                <p>Hit the button below to load the users data from Django server</p>
-                <button type="button" className="btn btn-primary d-flex align-self-center" onClick={actions.getUser} style={{ width: "fit-content" }}>Hit Api</button>
-                <p>See the console to look the data users or use the React complement from Google Chrome. Remember to create a super user or it will be empty</p>
-                <p>Add some users with the <a href="/admin/">Admin Page</a> or use the <a href="/api/">API</a> rest framework</p>
-                <p>Inspired in <a href="https://github.com/4GeeksAcademy/react-flask-hello" rel="noopener noreferrer" target="_blank">flask-react-hello Boilerplate</a> from 4Geeks Academy and <a href="https://dev.to/nagatodev/how-to-connect-django-to-reactjs-1a71" rel="noopener noreferrer" target="_blank">How to connect Django to ReactJs</a> from Faruq Abdulsalam </p>
-                <div className="row justify-content-center">
-                {/* show the store vars */}
-                    {store.users &&
-                        store.users.results.map((item, index) => {
-                            return <div className="col-auto" key={index}>
-                                <h3>User</h3>
-                                <ul className="list-group">
-                                    {Object.keys(item).map((attribute, indexAtr) => {
-                                        return <li key={indexAtr} className="list-group-item">
-                                            {attribute}: {item[attribute]}
-                                        </li>;
-                                    })}
-                                </ul>
-                            </div>;
-                        })
-                    }
+        <div className="container-fluid p-0 text-center">
+            <Canvasmenu />
+            <Buttoncanvas/>
+
+            <div className="w-100">
+                <img className="img-fluid" src="http://newequip.cl/wp-content/uploads/2017/08/familia-rema-2-blanca-2-1.jpg" alt="promo"/>
+            </div>
+            <div className="d-flex flex-column aligns-items-center">
+                <h1>Más vendidos</h1>
+                <h4>Insumos para Taller</h4>
+                <div className="row">
+                    <div className="col-4">
+                        <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/>
+                    </div>
+                    <div className="col-4">
+                        <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/>
+
+                    </div>
+                    <div className="col-4">
+                        <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/>
+
+                    </div>
                 </div>
+                <h4>Herramientas e insumos neumáticos</h4>
+                <h4>Herramientas</h4>
+                <h4>Equipos de taller</h4>
+                <h4>Camaras y cubrecamaras</h4>
+                <h4>Servicios</h4>
+                <h4>Redes de aire</h4>
             </div>
         </div>
     );
