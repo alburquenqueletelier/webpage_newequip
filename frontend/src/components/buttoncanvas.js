@@ -20,7 +20,8 @@ export const Buttoncanvas = ()=>{
             top: "12rem",
             display: "flex",
             flexDirection: "column",
-            float: "left"
+            float: "left",
+            zIndex: 9
         }}
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasScrolling"

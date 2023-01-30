@@ -21,6 +21,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 					console.log("Error loading message from backend", error);
 				}
 			},
+			valueToPrice: (amount=1, price) => {
+				let value = amount*price;
+				let response = Number(Number(value).toFixed()).toLocaleString('en');
+				return '$'+response.replace(',','.');
+			},
 			
 		}
 	};

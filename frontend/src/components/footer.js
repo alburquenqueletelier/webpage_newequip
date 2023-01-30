@@ -18,7 +18,6 @@ export const Footer = () => {
     return (
         <footer className={fixPosition ? "pb-1 fixed-bottom bg-secondary" : "pb-1 bg-secondary"}>
             <div className="row justify-content-around">
-                {/* Paul Lacrampe */}
                 <div className="col-auto">
                     <p className="mb-0 text-center">Ventas</p>
                     <ul>
@@ -41,7 +40,6 @@ export const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                {/* Veronica Galaz */}
                 <div className="col-auto">
                     <p >Horario de Atención</p>
                     <p className="mb-0">Lunes a viernes</p>

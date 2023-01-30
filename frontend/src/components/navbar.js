@@ -26,8 +26,8 @@ export const Navbar = () => {
 		// Classic Nav sticky to the top 
 		<nav className="navbar navbar-expand-md navbar-light bg-secondary sticky-top">
 			<div className="container">
-				<Link to="/">
-					<img src="http://newequip.cl/wp-content/uploads/2017/08/logo2.png" className="img-fluid" style={{ maxWidth: "12rem", width: "auto" }} alt="logo" />
+				<Link to="/" className="me-3">
+					<img src="http://newequip.cl/wp-content/uploads/2017/08/logo2.png" className="img-fluid" style={{ maxWidth: "9rem", width: "auto" }} alt="logo" />
 				</Link>
 				<button className="navbar-toggler" type="button" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" data-bs-target="#navbarSupportedContent">
 					<span className="navbar-toggler-icon"></span>
@@ -36,16 +36,29 @@ export const Navbar = () => {
 					<ul className="navbar-nav align-items-center">
 						<li className="nav-item ">
 							<form onSubmit={handleSearch}>
-								<input type="text" placeholder="Busca por nombre o SKU" className="form-control" style={{width: "32rem"}}/>
+								<input type="text" placeholder="Busca por nombre o SKU" className="form-control" style={{width: "30vw"}} />
 
 							</form>
 						</li>
-						<span className="material-symbols-outlined" onClick={handleSearch}>
+						<li className="material-symbols-outlined" style={{fontSize: "2.4rem"}} onClick={handleSearch}>
 							search
-						</span>
+						</li>
 
 					</ul>
 					<Link className="btn btn-primary ms-auto" to="/authentication">Login/Registro</Link>
+					<Link className="m-auto text-dark border border-1 p-1" style={{textDecoration: "none"}}>
+						<img src="https://cdn-icons-png.flaticon.com/512/4175/4175270.png" alt="carrito" width="36rem" />
+						<span className="badge text-bg-dark m-0 p-1 "
+						style={{
+							position: "relative",
+							bottom: "0.8rem",
+							right: "0.3rem",
+						}}
+						>
+							10
+						</span>
+						<span>$3.000</span>
+					</Link>
 					{/* <form className="d-md-flex ms-auto" onSubmit={handlelogin}>
 						<input  className="form-control me-2 align-self-center" type="text" placeholder="Usuario" aria-label="Text" value={username} onChange={(e) => setUsername(e.target.value)} />
 						<input  className="form-control me-2 align-self-center" type="password" placeholder="Constraseña" aria-label="Contraseña" onChange={(e) => setPassword(e.target.value)} />

@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Canvasmenu } from "../components/offcanvas";
 import { Buttoncanvas } from "../components/buttoncanvas";
+// import { Aftercard } from "../components/aftercard";
+import { Beforecard } from "../components/beforecard";
 
 export const Home = () => {
     // Import store and actions from Context
@@ -15,21 +17,35 @@ export const Home = () => {
             <div className="w-100">
                 <img className="img-fluid" src="http://newequip.cl/wp-content/uploads/2017/08/familia-rema-2-blanca-2-1.jpg" alt="promo"/>
             </div>
-            <div className="d-flex flex-column aligns-items-center">
+            <div className="d-flex flex-column mx-3 aligns-items-center">
                 <h1>Más vendidos</h1>
                 <h4>Insumos para Taller</h4>
                 <div className="row">
                     <div className="col-4">
-                        <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/>
+                        <Beforecard image="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" title="Contrapeso Plomo Universal 5GR 100UN"/>
+                        {/* <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/> */}
                     </div>
                     <div className="col-4">
-                        <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/>
-
+                        <Beforecard image="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" title="Contrapeso Plomo Universal 5GR 100UN"/>
+                        {/* <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/> */}
                     </div>
                     <div className="col-4">
-                        <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/>
-
+                        <Beforecard image="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" title="Contrapeso Plomo Universal 5GR 100UN"/>
+                        {/* <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/> */}
                     </div>
+                    <div className="col-4">
+                        <Beforecard image="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" title="Contrapeso Plomo Universal 5GR 100UN"/>
+                        {/* <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/> */}
+                    </div>
+                    <div className="col-4">
+                        <Beforecard image="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" title="Contrapeso Plomo Universal 5GR 100UN"/>
+                        {/* <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/> */}
+                    </div>
+                    <div className="col-4">
+                        <Beforecard image="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" title="Contrapeso Plomo Universal 5GR 100UN"/>
+                        {/* <img width="100%" src="http://www.newequip.cl/wp-content/uploads/2018/07/adhesivo-camioneta.jpg" alt="foto"/> */}
+                    </div>
+                   
                 </div>
                 <h4>Herramientas e insumos neumáticos</h4>
                 <h4>Herramientas</h4>
